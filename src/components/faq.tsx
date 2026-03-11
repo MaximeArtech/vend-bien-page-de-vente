@@ -7,54 +7,57 @@ import {
 
 const faqs = [
   {
-    question: "Comment fonctionne la garantie de vente en 30 jours ?",
+    question:
+      "Comment garantissez-vous de vendre mon bien au meilleur prix ?",
     answer:
-      "Si votre bien n'est pas vendu dans les 30 jours suivant la mise en vente, nous vous offrons jusqu'à 100% de nos honoraires. C'est notre engagement qualité envers vous.",
+      "Nous utilisons une approche d'évaluation de votre bien en 3 phases : (Structurel, Marché et Concurentielle). Cette méthode permet de positionner votre bien pour au meilleur prix, dès le départ. De plus, notre stratégie digitale cible les acheteurs les plus susceptibles d'être intéressés par votre bien, augmentant ainsi les chances d'obtenir le meilleur prix.",
   },
   {
-    question: "Quels services sont inclus dans votre offre ?",
+    question: "Quels services sont inclus dans votre gestion de la vente ?",
     answer:
-      "Notre offre comprend l'estimation, la stratégie de commercialisation digitale, les visites, la qualification des acheteurs, la négociation, et l'accompagnement administratif jusqu'à la signature chez le notaire.",
+      "Notre service couvre tous les aspects de la vente, annonce et photos pensées pour sublimer votre bien et en révéler tous les atouts, brochure et un site web dédié à votre bien, suivi en temps réel du marché, qualification des visites, négociations, prise en charge administrative, certification financière des acheteurs… vous garantissant une vente sécurisée et sans souci.",
   },
   {
-    question: "En quoi votre stratégie digitale est-elle différente ?",
+    question:
+      "Comment votre stratégie digitale améliore-t-elle les chances de vendre mon bien ?",
     answer:
-      "Nous utilisons des outils digitaux innovants pour maximiser la visibilité de votre bien avant même le lancement officiel de la commercialisation. Cela nous permet de créer un effet de rareté et d'attirer les acheteurs les plus qualifiés.",
+      "Nous optimisons la visibilité de votre bien sur toutes les plateformes de diffusion : portails immobiliers, réseaux sociaux et sites spécialisés. Grâce à notre stratégie digitale ciblée nous captons un maximum d'acquéreurs en mettant en valeur les atouts uniques de votre bien. Nous suivons en temps réel l'évolution de l'offre et de la demande en temps réel, ajustant la stratégie pour garantir une position optimale de votre bien.",
   },
   {
-    question: "Puis-je retirer mon bien de la vente à tout moment ?",
+    question: "Puis-je retirer mon bien de la vente ?",
     answer:
-      "Oui, vous êtes libre de retirer votre bien de la vente à tout moment, sans frais ni pénalités. Nous croyons en la transparence et la liberté de nos clients.",
+      "Absolument… Vous avez toujours la maîtrise et la possibilité de retirer votre bien à tout moment si vous l'estimez. C'est notre façon de garantir que notre service répond pleinement à vos attentes.",
   },
   {
-    question: "Que se passe-t-il si la vente ne se conclut pas en 30 jours ?",
+    question:
+      "Que se passe-t-il si mon bien n'est pas vendu dans les 30 jours ?",
     answer:
-      "Si votre bien ne trouve pas acquéreur dans les 30 jours, nous réduisons nos honoraires selon les termes de notre garantie, pouvant aller jusqu'à 100% d'honoraires offerts. Nous continuons bien entendu à commercialiser votre bien.",
+      "Si votre bien n'est pas vendu dans les 30 jours au prix convenu, nous allons jusqu'à offrir l'intégralité de nos honoraires. Cela augmente votre prix net vendeur et reflète notre détermination à conclure la vente de votre bien dans les délais impartis. Conditions affiché en agence.",
   },
 ];
 
 export function FAQ() {
   return (
-    <section id="faq" className="py-20 bg-gray-50">
+    <section id="faq" className="py-16 bg-gray-50">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-[#32373c] mb-4">
-          Questions <span className="text-amber-500">fréquentes</span>
+        <h2 className="text-2xl md:text-3xl font-bold text-center text-[#32373c] mb-2">
+          Vous avez des questions ?
         </h2>
-        <p className="text-center text-gray-500 mb-12">
-          Tout ce que vous devez savoir sur notre service
+        <p className="text-sm text-gray-500 text-center mb-10">
+          Nous avons les réponses
         </p>
 
-        <Accordion className="space-y-4">
+        <Accordion className="space-y-3">
           {faqs.map((faq, i) => (
             <AccordionItem
               key={i}
               value={`item-${i}`}
-              className="bg-white rounded-xl px-6 border border-gray-200"
+              className="border border-gray-200 bg-white px-6"
             >
-              <AccordionTrigger className="text-left font-semibold text-[#32373c] hover:text-amber-500 transition-colors">
+              <AccordionTrigger className="text-left text-sm font-semibold text-[#32373c] hover:no-underline">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-gray-600 leading-relaxed">
+              <AccordionContent className="text-sm text-gray-600 leading-relaxed">
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>

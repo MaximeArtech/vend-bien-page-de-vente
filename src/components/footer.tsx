@@ -1,55 +1,35 @@
-import { Separator } from "@/components/ui/separator";
+import Image from "next/image";
 
 export function Footer() {
   return (
-    <footer className="bg-[#1a1d21] text-gray-400 py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-3 gap-8 mb-8">
-          <div>
-            <span className="text-2xl font-bold text-white">
-              Vend<span className="text-amber-500">&</span>Bien
-            </span>
-            <p className="mt-4 text-sm leading-relaxed">
-              Nous vendons votre bien en 30 jours et au prix convenu.
-              Reims &amp; Epernay.
-            </p>
-          </div>
-          <div>
-            <h4 className="font-semibold text-white mb-4">Liens utiles</h4>
-            <ul className="space-y-2 text-sm">
-              <li>
-                <a href="#" className="hover:text-amber-500 transition-colors">
-                  Honoraires
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-amber-500 transition-colors">
-                  Mentions légales
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-amber-500 transition-colors">
-                  Politique de confidentialité
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold text-white mb-4">Contact</h4>
-            <ul className="space-y-2 text-sm">
-              <li>Reims &amp; Epernay</li>
-              <li>Disponible 7j/7 de 8h à 20h</li>
-            </ul>
-          </div>
+    <footer className="bg-[#32373c] text-gray-400 py-10">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <Image
+          src="/images/logo-white.png"
+          alt="Vend & Bien"
+          width={180}
+          height={45}
+          className="h-10 w-auto mx-auto mb-6"
+        />
+
+        <div className="flex flex-wrap justify-center gap-6 text-xs mb-6">
+          <a href="#" className="hover:text-white transition-colors">
+            Honoraires
+          </a>
+          <a href="#" className="hover:text-white transition-colors">
+            Mentions légales
+          </a>
+          <a href="#" className="hover:text-white transition-colors">
+            Politique de confidentialité
+          </a>
         </div>
 
-        <Separator className="bg-gray-700 mb-8" />
-
-        <div className="flex flex-col md:flex-row items-center justify-between text-sm">
-          <p>Tous droits réservés – Vend&amp;Bien – 2025</p>
-          <p className="mt-2 md:mt-0">
-            Forgés dans la jungle de{" "}
-            <span className="text-amber-500">Trib&apos;up</span>
+        <div className="border-t border-gray-600 pt-6">
+          <p className="text-xs">
+            Tous droits réservés – Vend&amp;Bien – 2025
+          </p>
+          <p className="text-xs mt-1">
+            Site, stratégie, et publicités forgés dans la jungle de Trib&apos;up
           </p>
         </div>
       </div>

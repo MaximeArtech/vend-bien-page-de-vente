@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useState, useRef } from "react";
-import { Home, Clock, Star } from "lucide-react";
 
 function AnimatedNumber({
   target,
@@ -39,7 +38,7 @@ function AnimatedNumber({
   }, [target, duration]);
 
   return (
-    <div ref={ref} className="text-5xl md:text-6xl font-bold text-amber-500">
+    <div ref={ref} className="text-4xl md:text-5xl font-bold text-[#32373c]">
       {count}
       {suffix}
     </div>
@@ -48,33 +47,25 @@ function AnimatedNumber({
 
 export function Stats() {
   return (
-    <section id="stats" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center">
-          <div className="space-y-4">
-            <div className="mx-auto w-16 h-16 bg-amber-50 rounded-2xl flex items-center justify-center">
-              <Home className="h-8 w-8 text-amber-500" />
-            </div>
-            <AnimatedNumber target={350} suffix="+" />
-            <p className="text-lg text-gray-600 font-medium">Biens vendus</p>
+    <section id="resultats" className="py-12 bg-white border-t border-gray-100">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+          <div className="space-y-2">
+            <AnimatedNumber target={350} suffix="" />
+            <p className="text-sm text-gray-500">Biens vendus</p>
           </div>
-          <div className="space-y-4">
-            <div className="mx-auto w-16 h-16 bg-amber-50 rounded-2xl flex items-center justify-center">
-              <Clock className="h-8 w-8 text-amber-500" />
+          <div className="space-y-2">
+            <div className="flex items-baseline justify-center gap-2">
+              <AnimatedNumber target={30} />
+              <span className="text-sm text-gray-500">Jours</span>
             </div>
-            <AnimatedNumber target={30} suffix=" jours" />
-            <p className="text-lg text-gray-600 font-medium">
+            <p className="text-sm text-gray-500">
               Délai de vente mandat performance
             </p>
           </div>
-          <div className="space-y-4">
-            <div className="mx-auto w-16 h-16 bg-amber-50 rounded-2xl flex items-center justify-center">
-              <Star className="h-8 w-8 text-amber-500" />
-            </div>
-            <AnimatedNumber target={98} suffix="%" />
-            <p className="text-lg text-gray-600 font-medium">
-              Satisfaction clients
-            </p>
+          <div className="space-y-2">
+            <AnimatedNumber target={98} suffix=" %" />
+            <p className="text-sm text-gray-500">Satisfaction clients</p>
           </div>
         </div>
       </div>

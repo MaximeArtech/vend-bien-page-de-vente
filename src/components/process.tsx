@@ -1,87 +1,64 @@
-import {
-  MousePointerClick,
-  Calculator,
-  Settings,
-  Handshake,
-  FileCheck,
-  PartyPopper,
-} from "lucide-react";
-
 const steps = [
   {
-    icon: MousePointerClick,
+    num: "1",
     title: "Éligibilité",
-    description: "Vérification de l'éligibilité de votre bien en un clic.",
+    description: "Vérifiez en 1 clic si votre bien est éligible",
   },
   {
-    icon: Calculator,
+    num: "2",
     title: "Estimation offerte",
     description:
-      "Estimation gratuite et innovante de votre bien par nos experts.",
+      "Grâce à notre estimation innovante, vous bénéficiez d'une évaluation fiable pour optimiser la vente de votre bien.",
   },
   {
-    icon: Settings,
+    num: "3",
     title: "Déploiement de notre méthode",
     description:
-      "Mise en place de notre méthodologie éprouvée par nos experts terrain.",
+      "Notre solution innovante déployée par notre expert dédié à votre projet immobilier.",
   },
   {
-    icon: Handshake,
-    title: "Négociation et vente",
+    num: "4",
+    title: "Négociation et vente du bien",
     description:
-      "Qualification des acheteurs et sécurisation de la transaction.",
+      "Qualifier les visites, mener les négociations, sécuriser le financement, c'est notre métier.",
   },
   {
-    icon: FileCheck,
-    title: "Suivi & accompagnement",
+    num: "5",
+    title: "Suivi & accompagnement administratif",
     description:
-      "Accompagnement administratif et suivi notarial jusqu'à la signature.",
+      "Du premier contact au passage chez le notaire, nous sommes à vos côtés pour tout gérer !",
   },
   {
-    icon: PartyPopper,
+    num: "6",
     title: "Souriez, c'est vendu !",
-    description: "Conclusion de la transaction et remise des clés.",
+    description:
+      "Et ouvrez la porte de vos nouveaux projets immobiliers…",
   },
 ];
 
 export function Process() {
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-[#32373c] mb-4">
-          Notre processus <span className="text-amber-500">pas à pas</span>
-        </h2>
-        <p className="text-center text-gray-500 mb-16 max-w-2xl mx-auto">
-          De l&apos;estimation à la remise des clés, nous gérons tout
-        </p>
-
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {steps.map((step, i) => {
-            const Icon = step.icon;
-            return (
-              <div
-                key={i}
-                className="relative flex items-start gap-4 p-6 rounded-2xl hover:bg-gray-50 transition-colors"
-              >
-                <div className="shrink-0">
-                  <div className="w-12 h-12 bg-amber-500 text-white rounded-xl flex items-center justify-center text-lg font-bold">
-                    {i + 1}
-                  </div>
-                </div>
-                <div>
-                  <div className="flex items-center gap-2 mb-2">
-                    <Icon className="h-5 w-5 text-amber-500" />
-                    <h3 className="text-lg font-semibold text-[#32373c]">
-                      {step.title}
-                    </h3>
-                  </div>
-                  <p className="text-gray-600 text-sm leading-relaxed">
-                    {step.description}
-                  </p>
-                </div>
+    <section className="py-16 bg-gray-50">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {steps.map((step) => (
+            <div
+              key={step.num}
+              className="bg-white p-6 flex items-start gap-4"
+            >
+              <div className="w-10 h-10 bg-[#32373c] text-white rounded-full flex items-center justify-center text-sm font-bold shrink-0">
+                {step.num}
               </div>
-            );
-          })}
+              <div>
+                <h3 className="text-sm font-bold text-[#32373c] mb-1">
+                  {step.title}
+                </h3>
+                <p className="text-xs text-gray-500 leading-relaxed">
+                  {step.description}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

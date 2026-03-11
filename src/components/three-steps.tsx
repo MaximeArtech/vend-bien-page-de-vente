@@ -1,69 +1,73 @@
-import { BarChart3, Rocket, Heart } from "lucide-react";
-
 export function ThreeSteps() {
   return (
-    <section id="methode" className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-[#32373c] mb-4">
-          Notre méthode en <span className="text-amber-500">3 étapes</span>
-        </h2>
-        <p className="text-center text-gray-500 mb-16 max-w-2xl mx-auto">
-          Un processus simple et efficace pour vendre votre bien rapidement
-        </p>
-
+    <section id="methode" className="py-16 bg-gray-50">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-3 gap-8">
-          <div className="relative">
-            <div className="bg-gray-50 rounded-2xl p-8 h-full hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 bg-amber-500 text-white rounded-xl flex items-center justify-center text-xl font-bold mb-6">
-                1
-              </div>
-              <div className="w-14 h-14 bg-amber-50 rounded-xl flex items-center justify-center mb-4">
-                <BarChart3 className="h-7 w-7 text-amber-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-[#32373c] mb-3">
-                Estimation fiable
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                Trois estimations complémentaires révèlent le potentiel de votre
-                bien et déterminent le prix juste.
-              </p>
+          {/* Étape 1 */}
+          <div className="bg-white p-8 text-center">
+            <div className="w-12 h-12 bg-[#32373c] text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-6">
+              1
             </div>
+            <h3 className="text-lg font-bold text-[#32373c] mb-4">
+              Estimation fiable
+            </h3>
+            <p className="text-sm text-gray-600 leading-relaxed mb-4">
+              Nos 3 estimations complémentaires permettent de révéler tout le
+              potentiel de votre bien et d&apos;en optimiser la valeur.
+            </p>
+            <ul className="text-sm text-gray-600 text-left space-y-2">
+              <li>
+                <strong className="text-[#32373c]">Structurale</strong> : pour
+                déceler la valeur unique de votre bien
+              </li>
+              <li>
+                <strong className="text-[#32373c]">Marché</strong> : pour
+                élaborer une stratégie d&apos;acquisition acquéreurs
+              </li>
+              <li>
+                <strong className="text-[#32373c]">Concurrentielle</strong> :
+                pour réaliser une vente rapide au meilleur prix
+              </li>
+            </ul>
           </div>
 
-          <div className="relative">
-            <div className="bg-gray-50 rounded-2xl p-8 h-full hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 bg-amber-500 text-white rounded-xl flex items-center justify-center text-xl font-bold mb-6">
-                2
-              </div>
-              <div className="w-14 h-14 bg-amber-50 rounded-xl flex items-center justify-center mb-4">
-                <Rocket className="h-7 w-7 text-amber-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-[#32373c] mb-3">
-                Stratégie digitale optimale
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                Visibilité maximale avant même le lancement de la
-                commercialisation grâce à notre stratégie digitale innovante.
-              </p>
+          {/* Étape 2 */}
+          <div className="bg-white p-8 text-center">
+            <div className="w-12 h-12 bg-[#32373c] text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-6">
+              2
             </div>
+            <h3 className="text-lg font-bold text-[#32373c] mb-4">
+              Stratégie digitale optimale
+            </h3>
+            <p className="text-sm text-gray-600 leading-relaxed mb-2">
+              <strong className="text-[#32373c]">
+                Vendez plus vite, avec plus de visibilité !
+              </strong>
+            </p>
+            <p className="text-sm text-gray-600 leading-relaxed">
+              Grâce à notre stratégie digitale avancée, offrez à votre bien une
+              visibilité maximale et attirez des acquéreurs ciblés, avant même
+              la mise en ligne de votre annonce.
+            </p>
           </div>
 
-          <div className="relative">
-            <div className="bg-gray-50 rounded-2xl p-8 h-full hover:shadow-lg transition-shadow">
-              <div className="w-12 h-12 bg-amber-500 text-white rounded-xl flex items-center justify-center text-xl font-bold mb-6">
-                3
-              </div>
-              <div className="w-14 h-14 bg-amber-50 rounded-xl flex items-center justify-center mb-4">
-                <Heart className="h-7 w-7 text-amber-600" />
-              </div>
-              <h3 className="text-xl font-semibold text-[#32373c] mb-3">
-                Votre projet, notre priorité absolue
-              </h3>
-              <p className="text-gray-600 leading-relaxed">
-                Disponible 7j/7, de 8h à 20h, 365 jours par an. Votre projet
-                est notre priorité numéro un.
-              </p>
+          {/* Étape 3 */}
+          <div className="bg-white p-8 text-center">
+            <div className="w-12 h-12 bg-[#32373c] text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-6">
+              3
             </div>
+            <h3 className="text-lg font-bold text-[#32373c] mb-4">
+              Votre projet, notre priorité absolue !
+            </h3>
+            <p className="text-sm text-gray-600 leading-relaxed mb-2">
+              <strong className="text-[#32373c]">
+                Votre projet, guidé par notre engagement.
+              </strong>
+            </p>
+            <ul className="text-sm text-gray-600 text-left space-y-2">
+              <li>Disponible 7j/7, de 8h à 20h, 365 jours par an.</li>
+              <li>Estimation en 48h.</li>
+            </ul>
           </div>
         </div>
       </div>

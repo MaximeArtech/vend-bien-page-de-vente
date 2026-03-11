@@ -1,10 +1,11 @@
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
 import { Stats } from "@/components/stats";
-import { Team } from "@/components/team";
-import { ValueProposition } from "@/components/value-proposition";
+import { TeamAndValue } from "@/components/team-and-value";
 import { Comparison } from "@/components/comparison";
+import { Guarantee } from "@/components/guarantee";
 import { ThreeSteps } from "@/components/three-steps";
+import { Testimonials } from "@/components/testimonials";
 import { RecentSales } from "@/components/recent-sales";
 import { Process } from "@/components/process";
 import { FAQ } from "@/components/faq";
@@ -17,12 +18,13 @@ export default function Home() {
       <Header />
       <Hero />
       <Stats />
-      <Team />
-      <ValueProposition />
+      <TeamAndValue />
       <Comparison />
+      <Guarantee />
       <ThreeSteps />
-      <RecentSales />
+      <Testimonials />
       <Process />
+      <RecentSales />
       <FAQ />
       <CTA />
       <Footer />
