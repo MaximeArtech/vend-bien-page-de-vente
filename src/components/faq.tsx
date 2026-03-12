@@ -40,10 +40,13 @@ export function FAQ() {
   return (
     <section id="faq" className="py-16 bg-gray-50">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-center text-[#32373c] mb-2">
+        <h2
+          className="text-[36px] font-medium text-center text-[#32373c] mb-2"
+          style={{ fontFamily: "var(--font-roboto-slab)" }}
+        >
           Vous avez des questions ?
         </h2>
-        <p className="text-sm text-gray-500 text-center mb-10">
+        <p className="text-[20px] text-[#32373c] text-center mb-10">
           Nous avons les réponses
         </p>
 

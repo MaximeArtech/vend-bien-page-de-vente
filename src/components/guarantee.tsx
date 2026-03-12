@@ -7,6 +7,7 @@ interface TeamMember {
 
 interface GuaranteeProps {
   heading?: string;
+  subtitle?: string;
   teamMembers?: TeamMember[];
 }
 
@@ -19,18 +20,26 @@ const defaultTeamMembers: TeamMember[] = [
 
 export function Guarantee({
   heading = defaultHeading,
+  subtitle,
   teamMembers = defaultTeamMembers,
 }: GuaranteeProps) {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        <h2 className="text-2xl md:text-3xl font-bold text-[#32373c] mb-4">
+        <h2
+          className="text-[36px] font-medium text-[#32373c] mb-4"
+          style={{ fontFamily: "var(--font-roboto-slab)" }}
+        >
           {heading}
         </h2>
 
+        {subtitle && (
+          <p className="text-[20px] text-[#32373c] mb-6">{subtitle}</p>
+        )}
+
         <a
           href="#eligibilite"
-          className="inline-block bg-[#32373c] text-white text-sm font-medium px-8 py-4 hover:bg-[#45494e] transition-colors mb-8"
+          className="inline-block bg-[#32373c] text-white text-[20px] font-semibold px-7 py-3.5 hover:bg-[#45494e] transition-colors mb-8"
         >
           Je vérifie l&apos;éligibilité de mon bien
         </a>

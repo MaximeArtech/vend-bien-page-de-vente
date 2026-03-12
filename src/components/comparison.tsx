@@ -3,44 +3,48 @@ import Image from "next/image";
 
 export function Comparison() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="pt-24 pb-24 bg-[#45494e]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-center text-[#32373c] mb-12">
-          VEND &amp; BIEN votre atout Immobilier, pour une vente rapide, au prix
-          convenu !
+        <h2
+          className="text-[36px] font-medium text-center text-white mb-12"
+          style={{ fontFamily: "var(--font-roboto-slab)" }}
+        >
+          VEND &amp; BIEN votre atout Immobilier,
+          <br />
+          pour une vente rapide, au prix convenu !
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-0">
           {/* Vente traditionnelle */}
-          <div className="bg-white border border-gray-200 p-8">
+          <div className="bg-[#7A7A7A] p-6">
             <div className="flex justify-center mb-4">
-              <Home className="h-8 w-8 text-gray-400" />
+              <Home className="h-8 w-8 text-white" />
             </div>
-            <h3 className="text-lg font-bold text-gray-400 mb-6 text-center uppercase tracking-wide">
+            <h3 className="text-[22px] font-normal text-white mb-6 text-center uppercase">
               Vente traditionnelle
             </h3>
-            <ul className="space-y-4">
+            <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <X className="h-5 w-5 text-red-500 mt-0.5 shrink-0" />
-                <span className="text-sm text-gray-600">
+                <span className="text-[19px] font-normal text-white">
                   Durée moyenne de vente <strong>+144 jours</strong>
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <X className="h-5 w-5 text-red-500 mt-0.5 shrink-0" />
-                <span className="text-sm text-gray-600">
+                <span className="text-[19px] font-normal text-white">
                   Financement acquéreur non vérifié
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <X className="h-5 w-5 text-red-500 mt-0.5 shrink-0" />
-                <span className="text-sm text-gray-600">
+                <span className="text-[19px] font-normal text-white">
                   Incertitude du prix de vente
                 </span>
               </li>
               <li className="flex items-start gap-3">
                 <X className="h-5 w-5 text-red-500 mt-0.5 shrink-0" />
-                <span className="text-sm text-gray-600">
+                <span className="text-[19px] font-normal text-white">
                   Visibilité limitée de votre bien
                 </span>
               </li>
@@ -48,49 +52,46 @@ export function Comparison() {
           </div>
 
           {/* Vend & Bien */}
-          <div className="bg-[#32373c] p-8 text-white">
-            <div className="flex justify-center mb-4">
+          <div className="bg-[#32373c] p-12">
+            <div className="flex justify-center mb-4 -mt-7 -ml-9">
               <Image
                 src="/images/logo-white-horizontal.png"
                 alt="Vend & Bien"
                 width={200}
                 height={47}
-                className="h-8 w-auto"
+                className="w-[62%] h-auto"
               />
             </div>
-            <ul className="space-y-4">
+            <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <Check className="h-5 w-5 text-green-400 mt-0.5 shrink-0" />
-                <span className="text-sm text-gray-300">
-                  Garantie vendeur à <strong className="text-white">30 jours</strong>
+                <Check className="h-5 w-5 text-white mt-1 shrink-0" />
+                <span className="text-[19px] font-normal text-white">
+                  Garantie vendeur à <strong>30 jours</strong>
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <Check className="h-5 w-5 text-green-400 mt-0.5 shrink-0" />
-                <span className="text-sm text-gray-300">
-                  <strong className="text-white">Qualification</strong> des acquéreurs
+                <Check className="h-5 w-5 text-white mt-1 shrink-0" />
+                <span className="text-[19px] font-normal text-white">
+                  <strong>Qualification</strong> des acquéreurs
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <Check className="h-5 w-5 text-green-400 mt-0.5 shrink-0" />
-                <span className="text-sm text-gray-300">
-                  Prix net vendeur <strong className="text-white">optimal</strong>
+                <Check className="h-5 w-5 text-white mt-1 shrink-0" />
+                <span className="text-[19px] font-normal text-white">
+                  Prix net vendeur <strong>optimal</strong>
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <Check className="h-5 w-5 text-green-400 mt-0.5 shrink-0" />
-                <span className="text-sm text-gray-300">
-                  <strong className="text-white">Méthode éprouvée</strong> portée par
-                  notre expertise
+                <Check className="h-5 w-5 text-white mt-1 shrink-0" />
+                <span className="text-[19px] font-normal text-white">
+                  <strong>Méthode éprouvée</strong> portée par notre expertise
                 </span>
               </li>
               <li className="flex items-start gap-3">
-                <Check className="h-5 w-5 text-green-400 mt-0.5 shrink-0" />
-                <span className="text-sm text-gray-300">
+                <Check className="h-5 w-5 text-white mt-1 shrink-0" />
+                <span className="text-[19px] font-normal text-white">
                   Accompagnement global,{" "}
-                  <strong className="text-white">
-                    transaction sereine et réussie.
-                  </strong>
+                  <strong>transaction sereine et réussie.</strong>
                 </span>
               </li>
             </ul>

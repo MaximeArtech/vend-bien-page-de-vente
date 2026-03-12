@@ -123,10 +123,13 @@ export function RecentSales() {
   return (
     <section id="ventes" className="py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-center text-[#32373c] mb-2">
+        <h2
+          className="text-[36px] font-medium text-center text-[#32373c] mb-2"
+          style={{ fontFamily: "var(--font-roboto-slab)" }}
+        >
           Nos derniers biens vendus en moins de 30 jours
         </h2>
-        <p className="text-sm text-gray-500 text-center mb-10">
+        <p className="text-[20px] text-[#32373c] text-center mb-10">
           Ajoutez-y votre bien sans plus tarder !
         </p>
 
@@ -215,7 +218,7 @@ export function RecentSales() {
         <div className="text-center mt-10">
           <a
             href="#eligibilite"
-            className="inline-block bg-[#32373c] text-white text-sm font-medium px-8 py-4 hover:bg-[#45494e] transition-colors"
+            className="inline-block bg-[#32373c] text-white text-[20px] font-semibold px-7 py-3.5 hover:bg-[#45494e] transition-colors"
           >
             Je vérifie l&apos;éligibilité de mon bien
           </a>

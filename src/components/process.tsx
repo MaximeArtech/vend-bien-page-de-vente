@@ -38,25 +38,32 @@ const steps = [
 
 export function Process() {
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="pt-24 pb-16 bg-[#45494e]">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <h2 className="text-[36px] font-medium text-white text-center mb-2" style={{ fontFamily: "var(--font-roboto-slab)" }}>
+          Comment ça marche ?
+        </h2>
+        <p className="text-[36px] font-medium text-white text-center mb-12" style={{ fontFamily: "var(--font-roboto-slab)" }}>
+          Tout est pensé pour Vendre &amp; Bien !
+        </p>
+        <div className="flex flex-col md:flex-row justify-center gap-9 pt-12 pb-24">
           {steps.map((step) => (
             <div
               key={step.num}
-              className="bg-white p-6 flex items-start gap-4"
+              className="flex flex-col items-center text-center flex-1 py-9 px-4"
             >
-              <div className="w-10 h-10 bg-[#32373c] text-white rounded-full flex items-center justify-center text-sm font-bold shrink-0">
-                {step.num}
+              <div className="w-[30px] h-[30px] mb-3">
+                <svg viewBox="0 0 30 30" className="w-full h-full">
+                  <circle cx="15" cy="15" r="15" fill="white" />
+                  <text x="15" y="21" textAnchor="middle" fill="#32373c" fontSize="16" fontWeight="bold">{step.num}</text>
+                </svg>
               </div>
-              <div>
-                <h3 className="text-sm font-bold text-[#32373c] mb-1">
-                  {step.title}
-                </h3>
-                <p className="text-xs text-gray-500 leading-relaxed">
-                  {step.description}
-                </p>
-              </div>
+              <h3 className="text-[22px] font-normal text-white uppercase mb-2">
+                {step.title}
+              </h3>
+              <p className="text-[19px] font-normal text-white leading-relaxed">
+                {step.description}
+              </p>
             </div>
           ))}
         </div>

@@ -24,7 +24,8 @@ export default function Home() {
       <Process />
       <RecentSales />
       <Guarantee
-        heading="Nous vendons votre bien dans les 30 prochains jours, au prix convenu. Sinon, jusqu'à 100% des honoraires offerts."
+        heading="Nous vendons votre bien dans les 30 prochains jours, au prix convenu."
+        subtitle="Sinon, jusqu'à 100% des honoraires offerts."
         teamMembers={[
           { name: "Sébastien", photo: "/images/agents/sebastien.png" },
         ]}
