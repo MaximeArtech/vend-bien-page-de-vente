@@ -27,6 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+      <head>
+        <link rel="stylesheet" href="https://use.typekit.net/frr5tat.css" />
+      </head>
       <body
         className={`${roboto.variable} ${robotoSlab.variable} font-sans antialiased`}
         style={{ fontFamily: "var(--font-roboto), sans-serif" }}
