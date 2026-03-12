@@ -1,6 +1,5 @@
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
-import { Stats } from "@/components/stats";
 import { TeamAndValue } from "@/components/team-and-value";
 import { Comparison } from "@/components/comparison";
 import { Guarantee } from "@/components/guarantee";
@@ -17,7 +16,6 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
       <Hero />
-      <Stats />
       <TeamAndValue />
       <Comparison />
       <Guarantee />
@@ -25,8 +23,15 @@ export default function Home() {
       <Testimonials />
       <Process />
       <RecentSales />
-      <FAQ />
+      <Guarantee
+        heading="Nous vendons votre bien dans les 30 prochains jours, au prix convenu. Sinon, jusqu'à 100% des honoraires offerts."
+        teamMembers={[
+          { name: "Sébastien", photo: "/images/agents/sebastien.png" },
+        ]}
+      />
       <CTA />
+      <FAQ />
+      <CTA variant="secondary" />
       <Footer />
     </main>
   );

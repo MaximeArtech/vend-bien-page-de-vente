@@ -1,4 +1,5 @@
-import { Check, X } from "lucide-react";
+import { Check, X, Home } from "lucide-react";
+import Image from "next/image";
 
 export function Comparison() {
   return (
@@ -12,6 +13,9 @@ export function Comparison() {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Vente traditionnelle */}
           <div className="bg-white border border-gray-200 p-8">
+            <div className="flex justify-center mb-4">
+              <Home className="h-8 w-8 text-gray-400" />
+            </div>
             <h3 className="text-lg font-bold text-gray-400 mb-6 text-center uppercase tracking-wide">
               Vente traditionnelle
             </h3>
@@ -45,9 +49,15 @@ export function Comparison() {
 
           {/* Vend & Bien */}
           <div className="bg-[#32373c] p-8 text-white">
-            <h3 className="text-lg font-bold text-white mb-6 text-center uppercase tracking-wide">
-              Vend &amp; Bien
-            </h3>
+            <div className="flex justify-center mb-4">
+              <Image
+                src="/images/logo-white-horizontal.png"
+                alt="Vend & Bien"
+                width={200}
+                height={47}
+                className="h-8 w-auto"
+              />
+            </div>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <Check className="h-5 w-5 text-green-400 mt-0.5 shrink-0" />

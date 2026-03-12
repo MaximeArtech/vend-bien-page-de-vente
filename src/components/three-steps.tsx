@@ -2,6 +2,9 @@ export function ThreeSteps() {
   return (
     <section id="methode" className="py-16 bg-gray-50">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-2xl md:text-3xl font-bold text-center text-[#32373c] mb-12">
+          Notre méthode pour une vente garantie
+        </h2>
         <div className="grid md:grid-cols-3 gap-8">
           {/* Étape 1 */}
           <div className="bg-white p-8 text-center">
@@ -17,7 +20,7 @@ export function ThreeSteps() {
             </p>
             <ul className="text-sm text-gray-600 text-left space-y-2">
               <li>
-                <strong className="text-[#32373c]">Structurale</strong> : pour
+                <strong className="text-[#32373c]">Structurelle</strong> : pour
                 déceler la valeur unique de votre bien
               </li>
               <li>
